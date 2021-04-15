@@ -1,6 +1,11 @@
 .w-90 {
     width: 90% !important;
 }
+.w-sm-90{
+    @media screen and(max-width: 540px) {
+        width: 90% !important;
+    }
+}
 
 .w-40 {
     width: 40% !important;
@@ -17,7 +22,11 @@
 .w-10 {
     width: 10% !important;
 }
-
+.w-sm-100{
+    @media screen and(max-width: 540px) {
+        width: 100% !important;
+    }
+}
 .he-100 {
     min-height: 100vh;
     @media screen and (max-width: 769px) {
@@ -148,6 +157,9 @@ body {
     @media screen and(max-width: 1367px) {
         font-size: 36px;
     }
+    @media screen and(max-width: 540px) {
+        font-size: 24px;
+    }
 }
 .global-sub-title{
     font-size: 36px;
@@ -159,6 +171,9 @@ body {
     @media screen and(max-width: 1367px) {
         font-size: 22px;
     }
+    @media screen and(max-width: 540px) {
+        font-size: 16px;
+    }
 }
 .text-products{
     font-size: 20px;
@@ -169,5 +184,12 @@ body {
     }
     @media screen and(max-width: 1600px) {
         font-size: 16px;
+    }
+    @media screen and(max-width: 1140px) {
+        font-size: 20px;
+        text-align: justify;
+    }
+    @media screen and(max-width: 540px) {
+        font-size: 12px;
     }
 }

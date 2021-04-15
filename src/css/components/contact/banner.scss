@@ -1,0 +1,131 @@
+.contact-banner{
+    height: 100vh;
+    background-color: var(--primary-color);
+    position: relative;
+    padding: 100px 0;
+    @media screen and(max-width: 1140px) {
+        height: unset;
+    }
+    .bg{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @media screen and(max-width: 1600px) {
+            max-width: 90%;
+        }
+        @media screen and(max-width: 1140px) {
+            display: none;
+        }
+    }
+    .container-fluid{
+        height: 100%;
+        @media screen and(max-width: 1140px) {
+            height: unset;
+        }
+        .row{
+            height: 100%;
+            @media screen and(max-width: 1140px) {
+                height: unset;
+            }
+            .col-xl-7{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                @media screen and(max-width: 1140px) {
+                    display: unset;
+                    background-position: right;
+                    border-radius: 21px;
+                    background-image: url(../images/product/contact-bg-mobile.png);
+                    background-size: cover;
+                    margin-bottom: 50px;
+                    padding: 20px;
+                }
+                .contact-title{
+                    color: #FFFFFF;
+                    font-size: 68px;
+                    font-weight: 700;
+                    margin-bottom: 60px;
+                    z-index: 9;
+                    @media screen and(max-width: 1440px) {
+                        font-size: 50px;
+                    }
+                    @media screen and(max-width: 540px) {
+                        font-size: 22px;
+                    }
+                
+                }
+                .logo{
+                    z-index: 9;
+                    @media screen and(max-width: 540px) {
+                        width: 100px;
+                    }
+                }
+                .bg-mobile{
+                    display: none;
+                    @media screen and(max-width: 1140px) {
+                        display: block;
+                        position: absolute;
+                    }
+                }
+            }
+            .col-xl-5{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .top{
+                    width: 100%;
+                    height: 320px;
+                    background-color: rgba($color: #26815A, $alpha: 0.8);
+                    border-radius: 20px;
+                    padding: 0 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                    .item{
+
+                        margin-bottom: 25px;
+                        color: #FFFFFF;
+                        font-size: 28px;
+                        line-height: 1.5;
+                        @media screen and(max-width: 1600px) {
+                            font-size: 20px;
+                        }
+                        @media screen and(max-width: 1440px) {
+                            font-size: 18px;
+                        }
+                        a{
+                            color: #FFFFFF;
+                            font-size: 28px;
+                            @media screen and(max-width: 1600px) {
+                                font-size: 20px;
+                            }
+                            @media screen and(max-width: 1440px) {
+                                font-size: 18px;
+                            }
+                        }
+                        img{
+                            margin-right: 20px;
+                        }
+                    }
+                }
+                .layout{
+                    height: 320px;
+                    @media screen and(max-width: 1600px) {
+                        height: 280px;
+                    }
+                    @media screen and(max-width: 1440px) {
+                        height: 260px;
+                    }
+                    @media screen and(max-width: 1366px) {
+                        height: 240px;
+                    }
+                    @media screen and(max-width: 1140px) {
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
