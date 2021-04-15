@@ -164,16 +164,20 @@ body {
   @media screen and (max-width: 991px) {
     .header .header_menu {
       display: none; } }
-  .header .header_menu ul li {
-    margin-left: 30px; }
-    .header .header_menu ul li a {
-      padding: 10px 20px;
-      border: 1px solid #ffffff; }
-      .header .header_menu ul li a:hover {
+  .header .header_menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header .header_menu ul li {
+      margin-left: 30px; }
+      .header .header_menu ul li a {
+        padding: 10px 20px;
+        border: 1px solid #ffffff; }
+        .header .header_menu ul li a:hover {
+          color: var(--primary-color); }
+      .header .header_menu ul li .active {
+        border: 1px solid var(--primary-color);
         color: var(--primary-color); }
-    .header .header_menu ul li .active {
-      border: 1px solid var(--primary-color);
-      color: var(--primary-color); }
   .header .menubar {
     display: none; }
     @media screen and (max-width: 991px) {
@@ -260,6 +264,44 @@ body {
         color: var(--color-text-black);
         transition: all 0.2s ease;
         font-weight: bold; }
+  @media screen and (max-width: 991px) {
+    .header .header_menu {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      right: -260px;
+      width: 250px;
+      height: 100vh;
+      transition: 0.5s;
+      background-color: #fff;
+      z-index: 99;
+      box-shadow: 1px 0 15px 2px #000000; }
+      .header .header_menu ul {
+        flex-direction: column;
+        padding-top: 60px;
+        align-items: center;
+        padding-left: 0; }
+        .header .header_menu ul li {
+          margin-top: 20px;
+          width: 90%;
+          margin-right: 0;
+          border-bottom: 1px solid #000000;
+          padding-bottom: 20px; }
+          .header .header_menu ul li a {
+            font-size: 25px;
+            justify-content: center; }
+        .header .header_menu ul .header__language {
+          display: block;
+          margin-top: 20px; }
+      .header .header_menu img {
+        width: unset; }
+    .header .menubar {
+      display: block; }
+    .header .set-width {
+      display: block !important;
+      right: 0px; }
+    .header .header__language {
+      display: none; } }
 
 footer {
   background-color: #009254; }

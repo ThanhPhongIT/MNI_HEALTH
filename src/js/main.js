@@ -61,3 +61,20 @@ function checkDot() {
 
 }
 checkDot();
+
+function toogleMenu() {
+    let menuButton = document.querySelector(".menubar");
+    let menu = document.querySelector(".header_menu");
+    let body = document.getElementsByTagName("body")[0];
+
+    menuButton.addEventListener("click", () => {
+        menu.classList.toggle('set-width')
+        body.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+    });
+    window.addEventListener('click', function(e) {
+        if (!menu.contains(e.target) && !menuButton.contains(e.target)) {
+            menu.classList.remove('set-width')
+        }
+    })
+}
+toogleMenu();
