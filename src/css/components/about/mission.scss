@@ -1,7 +1,9 @@
-.omni-health {
-    min-height: 100vh;
+.mission {
     border-bottom: 1px solid #009254;
     .left {
+        @media screen and(max-width: 769px) {
+            margin: 70px 0;
+        }
         .gim {
             width: 20px;
             height: 380px;
@@ -9,16 +11,18 @@
         }
         .content {
             width: 90%;
-            .start {
-                font-size: 50px;
-                color: var(--primary-color);
-            }
             .continus {
                 font-size: 16px;
                 line-height: 16px;
+                @media screen and(max-width: 1280px) {
+                    font-size: 15px !important;
+                }
             }
             p {
                 margin: 0;
+                @media screen and(max-width: 1280px) {
+                    font-size: 15px !important;
+                }
             }
             .head {
                 margin-bottom: 60px;
@@ -30,8 +34,15 @@
         height: 100%;
         img {
             position: absolute;
-            right: -100px;
-            top: -356px;
+            right: 100px;
+            top: 50%;
+            transform: translateY(-50%);
+            @media screen and (max-width: 1440px) {
+                width: 85%;
+            }
+            @media screen and (max-width: 769px) {
+                width: 75%;
+            }
         }
     }
 }

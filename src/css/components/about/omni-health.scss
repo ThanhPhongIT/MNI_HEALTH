@@ -1,23 +1,45 @@
 .omni-health {
-    min-height: 100vh;
     .left {
+        @media screen and(max-width: 769px) {
+            padding: 70px 0;
+        }
         .gim {
             width: 20px;
             height: 480px;
             background-color: #00A659 !important;
+            @media screen and(max-width: 1440px) {
+                height: 580px;
+            }
+            @media screen and(max-width: 1440px) {
+                height: 580px;
+            }
+            @media screen and(max-width: 1280px) {
+                height: 500px;
+            }
         }
         .content {
             width: 80%;
             .start {
                 font-size: 50px;
                 color: var(--primary-color);
+                @media screen and(max-width: 1280px) {
+                    font-size: 30px !important;
+                }
             }
             .continus {
                 font-size: 16px;
                 line-height: 16px;
+                @media screen and(max-width: 1280px) {
+                    font-size: 15px !important;
+                }
             }
             .bottom {
                 margin-top: 60px;
+                font-size: 16px;
+                @media screen and(max-width: 1280px) {
+                    font-size: 15px !important;
+                    margin-top: 40px;
+                }
             }
         }
     }
@@ -26,12 +48,15 @@
         height: 100%;
         img {
             position: absolute;
-            right: -100px;
-            top: -356px;
+            right: 100px;
+            top: 50%;
+            transform: translateY(-50%);
+            @media screen and (max-width: 1440px) {
+                width: 85%;
+            }
+            @media screen and (max-width: 769px) {
+                width: 75%;
+            }
         }
     }
-}
-
-.w-40 {
-    width: 40%;
 }
