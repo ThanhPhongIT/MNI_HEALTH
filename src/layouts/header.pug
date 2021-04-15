@@ -1,3 +1,23 @@
 .header
-   .container
-      .header__menu
+   .container-fluid.w-80
+      .header-content.d-flex.align-items-center.justify-content-between
+         .logo 
+            img(src="images/logo.svg", alt="")
+         .header_menu 
+            ul.d-flex.align-items-center.justify-content-center
+               li 
+                  a(href="index.html") Home 
+               li 
+                  a(href="about.html") About us 
+               li 
+                  a(href="#") Our products 
+               li 
+                  a(href="#") Contacts
+         .header__language
+            #outerContainer
+               #container.select-left
+                  #item
+                  .left
+                     span Vi
+                  .right
+                     span En

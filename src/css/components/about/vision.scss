@@ -1,0 +1,35 @@
+.vision {
+    min-height: 100vh;
+    border-top: 1px solid #009254;
+    border-bottom: 1px solid #009254;
+    .left {
+        width: 60%;
+        height: 100%;
+        img {
+            position: absolute;
+            left: -100px;
+            top: -356px;
+        }
+    }
+    .right {
+        .gim {
+            width: 20px;
+            height: 200px;
+            background-color: #00A659 !important;
+        }
+        .content {
+            width: 90%;
+            .start {
+                font-size: 50px;
+                color: var(--primary-color);
+            }
+            .continus {
+                font-size: 16px;
+                line-height: 16px;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+footer {
+    background-color: #009254;
+    .inner {
+        padding: 67px;
+    }
+    .contact {
+        ul {
+            display: flex;
+            align-self: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            li {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0;
+                .icon {
+                    margin-right: 20px;
+                }
+                .content {
+                    font-size: 21px;
+                    color: var(--color-text-white);
+                }
+            }
+        }
+    }
+}

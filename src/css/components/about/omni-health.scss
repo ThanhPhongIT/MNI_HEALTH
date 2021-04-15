@@ -1,0 +1,37 @@
+.omni-health {
+    min-height: 100vh;
+    .left {
+        .gim {
+            width: 20px;
+            height: 480px;
+            background-color: #00A659 !important;
+        }
+        .content {
+            width: 80%;
+            .start {
+                font-size: 50px;
+                color: var(--primary-color);
+            }
+            .continus {
+                font-size: 16px;
+                line-height: 16px;
+            }
+            .bottom {
+                margin-top: 60px;
+            }
+        }
+    }
+    .right {
+        width: 60%;
+        height: 100%;
+        img {
+            position: absolute;
+            right: -100px;
+            top: -356px;
+        }
+    }
+}
+
+.w-40 {
+    width: 40%;
+}
