@@ -131,4 +131,32 @@ body {
     color: var(--primary-color);
     text-transform: uppercase;
     margin-bottom: 20px;
+    @media screen and(max-width: 1600px) {
+        font-size: 40px;
+    }
+    @media screen and(max-width: 1367px) {
+        font-size: 36px;
+    }
+}
+.global-sub-title{
+    font-size: 36px;
+    color: var(--primary-color);
+    font-weight: 500;
+    @media screen and(max-width: 1600px) {
+        font-size: 28px;
+    }
+    @media screen and(max-width: 1367px) {
+        font-size: 22px;
+    }
+}
+.text-products{
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 2;
+    @media screen and(max-width: 1600px) {
+        font-size: 18px;
+    }
+    @media screen and(max-width: 1600px) {
+        font-size: 16px;
+    }
 }
