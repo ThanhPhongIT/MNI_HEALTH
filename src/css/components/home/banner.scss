@@ -1,7 +1,13 @@
 .home {
     .banner {
+        min-height: 100vh;
         height: 100%;
         background-color: #008049;
+        display: flex;
+        align-items: center;
+        .right {
+            margin: 80px 0;
+        }
         .img-back {
             width: 400px;
             position: absolute;
@@ -9,6 +15,11 @@
             right: 70px;
             img {
                 width: 100%;
+            }
+            @media screen and(max-width: 769px) {
+                width: 228px;
+                top: 29%;
+                right: 8px;
             }
         }
         .bg-dif {
@@ -22,8 +33,15 @@
             font-weight: 500;
             font-family: 'Segoe UI', sans-serif;
             text-transform: uppercase;
+            @media screen and (max-width: 768px) {
+                font-size: 29px;
+                margin: 50px 0 100px 0;
+            }
             p {
                 line-height: 100px;
+                @media screen and (max-width: 768px) {
+                    line-height: 50px;
+                }
                 margin: 0;
                 color: var(--color-text-white);
             }

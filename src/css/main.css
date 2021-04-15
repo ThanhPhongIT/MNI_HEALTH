@@ -121,6 +121,9 @@ body {
   @media screen and (max-width: 1367px) {
     .global-title {
       font-size: 36px; } }
+  @media screen and (max-width: 426px) {
+    .global-title {
+      font-size: 24px; } }
 
 .global-sub-title {
   font-size: 36px;
@@ -158,6 +161,9 @@ body {
     padding: 15px 0; }
     .header .header-content .logo {
       cursor: pointer; }
+  @media screen and (max-width: 769px) {
+    .header .header_menu {
+      display: none; } }
   .header .header_menu ul li {
     margin-left: 30px; }
     .header .header_menu ul li a {
@@ -166,6 +172,14 @@ body {
       .header .header_menu ul li a:hover {
         border: 1px solid var(--primary-color);
         color: var(--primary-color); }
+  .header .menubar {
+    display: none; }
+    @media screen and (max-width: 769px) {
+      .header .menubar {
+        display: block; } }
+  @media screen and (max-width: 769px) {
+    .header .header__language {
+      display: none; } }
   .header .header__language #outerContainer {
     display: block; }
   .header .header__language #container {
@@ -324,7 +338,7 @@ body {
 footer {
   background-color: #009254; }
   footer .inner {
-    padding: 67px; }
+    padding: 67px 0; }
   footer .contact ul {
     display: flex;
     align-self: flex-start;
@@ -345,8 +359,13 @@ footer {
             font-size: 16px !important; } }
 
 .home .banner {
+  min-height: 100vh;
   height: 100%;
-  background-color: #008049; }
+  background-color: #008049;
+  display: flex;
+  align-items: center; }
+  .home .banner .right {
+    margin: 80px 0; }
   .home .banner .img-back {
     width: 400px;
     position: absolute;
@@ -354,6 +373,11 @@ footer {
     right: 70px; }
     .home .banner .img-back img {
       width: 100%; }
+    @media screen and (max-width: 769px) {
+      .home .banner .img-back {
+        width: 228px;
+        top: 29%;
+        right: 8px; } }
   .home .banner .bg-dif {
     background-color: var(--primary-color); }
     .home .banner .bg-dif img {
@@ -363,10 +387,17 @@ footer {
     font-weight: 500;
     font-family: 'Segoe UI', sans-serif;
     text-transform: uppercase; }
+    @media screen and (max-width: 768px) {
+      .home .banner .text {
+        font-size: 29px;
+        margin: 50px 0 100px 0; } }
     .home .banner .text p {
       line-height: 100px;
       margin: 0;
       color: var(--color-text-white); }
+      @media screen and (max-width: 768px) {
+        .home .banner .text p {
+          line-height: 50px; } }
 
 @media screen and (max-width: 769px) {
   .omni-health .left {
@@ -376,6 +407,9 @@ footer {
   width: 20px;
   height: 480px;
   background-color: #00A659 !important; }
+  @media screen and (max-width: 769px) {
+    .omni-health .left .gim {
+      width: 6px; } }
   @media screen and (max-width: 1440px) {
     .omni-health .left .gim {
       height: 580px; } }
@@ -393,20 +427,29 @@ footer {
     color: var(--primary-color); }
     @media screen and (max-width: 1280px) {
       .omni-health .left .content .start {
-        font-size: 30px !important; } }
+        font-size: 30px; } }
+    @media screen and (max-width: 426px) {
+      .omni-health .left .content .start {
+        font-size: 25px; } }
   .omni-health .left .content .continus {
     font-size: 16px;
     line-height: 16px; }
     @media screen and (max-width: 1280px) {
       .omni-health .left .content .continus {
-        font-size: 15px !important; } }
+        font-size: 15px; } }
+    @media screen and (max-width: 426px) {
+      .omni-health .left .content .continus {
+        font-size: 12px; } }
   .omni-health .left .content .bottom {
     margin-top: 60px;
     font-size: 16px; }
     @media screen and (max-width: 1280px) {
       .omni-health .left .content .bottom {
-        font-size: 15px !important;
+        font-size: 15px;
         margin-top: 40px; } }
+    @media screen and (max-width: 426px) {
+      .omni-health .left .content .bottom {
+        font-size: 12px; } }
 
 .omni-health .right {
   width: 60%;
@@ -421,7 +464,11 @@ footer {
         width: 85%; } }
     @media screen and (max-width: 769px) {
       .omni-health .right img {
-        width: 75%; } }
+        width: 75%;
+        right: 50px; } }
+    @media screen and (max-width: 426px) {
+      .omni-health .right img {
+        width: 80%; } }
 
 .vision {
   border-top: 1px solid #009254;
@@ -439,7 +486,11 @@ footer {
           width: 85%; } }
       @media screen and (max-width: 769px) {
         .vision .left img {
-          width: 75%; } }
+          width: 75%;
+          left: 50px; } }
+      @media screen and (max-width: 426px) {
+        .vision .left img {
+          width: 80%; } }
   @media screen and (max-width: 769px) {
     .vision .right {
       padding: 70px 0; } }
@@ -447,6 +498,9 @@ footer {
     width: 20px;
     height: 200px;
     background-color: #00A659 !important; }
+    @media screen and (max-width: 769px) {
+      .vision .right .gim {
+        width: 6px; } }
   .vision .right .content {
     width: 90%; }
     .vision .right .content .start {
@@ -457,12 +511,18 @@ footer {
       line-height: 16px; }
       @media screen and (max-width: 1280px) {
         .vision .right .content .continus {
-          font-size: 15px !important; } }
+          font-size: 15px; } }
+      @media screen and (max-width: 426px) {
+        .vision .right .content .continus {
+          font-size: 12px; } }
     .vision .right .content p {
       margin: 0; }
       @media screen and (max-width: 1280px) {
         .vision .right .content p {
-          font-size: 15px !important; } }
+          font-size: 15px; } }
+      @media screen and (max-width: 426px) {
+        .vision .right .content p {
+          font-size: 12px; } }
 
 .mission {
   border-bottom: 1px solid #009254; }
@@ -473,6 +533,9 @@ footer {
     width: 20px;
     height: 380px;
     background-color: #00A659 !important; }
+    @media screen and (max-width: 769px) {
+      .mission .left .gim {
+        width: 6px; } }
   .mission .left .content {
     width: 90%; }
     .mission .left .content .continus {
@@ -480,12 +543,18 @@ footer {
       line-height: 16px; }
       @media screen and (max-width: 1280px) {
         .mission .left .content .continus {
-          font-size: 15px !important; } }
+          font-size: 15px; } }
+      @media screen and (max-width: 426px) {
+        .mission .left .content .continus {
+          font-size: 12px; } }
     .mission .left .content p {
       margin: 0; }
       @media screen and (max-width: 1280px) {
         .mission .left .content p {
-          font-size: 15px !important; } }
+          font-size: 15px; } }
+      @media screen and (max-width: 426px) {
+        .mission .left .content p {
+          font-size: 12px; } }
     .mission .left .content .head {
       margin-bottom: 60px; }
   .mission .right {
@@ -501,7 +570,11 @@ footer {
           width: 85%; } }
       @media screen and (max-width: 769px) {
         .mission .right img {
-          width: 75%; } }
+          width: 75%;
+          right: 50px; } }
+      @media screen and (max-width: 426px) {
+        .mission .right img {
+          width: 80%; } }
 
 .section {
   padding: 120px 0; }
@@ -516,6 +589,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center; }
+    @media screen and (max-width: 426px) {
+      .section .item {
+        align-items: flex-start;
+        border-radius: 0 32px 0 0;
+        border-left-width: 10px !important; } }
     .section .item .number {
       font-size: 219px;
       color: rgba(0, 146, 84, 0.12);
@@ -524,6 +602,9 @@ footer {
         .section .item .number {
           padding: 0 15px;
           font-size: 200px; } }
+      @media screen and (max-width: 426px) {
+        .section .item .number {
+          font-size: 68px; } }
     .section .item .text {
       display: flex;
       align-items: flex-start;
@@ -533,7 +614,10 @@ footer {
       font-size: 16px; }
       @media screen and (max-width: 1280px) {
         .section .item .text {
-          font-size: 15px !important; } }
+          font-size: 15px; } }
+      @media screen and (max-width: 426px) {
+        .section .item .text {
+          font-size: 12px; } }
       .section .item .text .title {
         font-size: 24px;
         font-weight: 600;
@@ -543,6 +627,9 @@ footer {
           .section .item .text .title {
             font-size: 20px !important;
             margin-bottom: 20px; } }
+        @media screen and (max-width: 426px) {
+          .section .item .text .title {
+            margin-top: 20px; } }
 
 .products-banner {
   height: 100%;

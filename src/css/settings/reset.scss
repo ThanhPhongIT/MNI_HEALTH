@@ -148,8 +148,12 @@ body {
     @media screen and(max-width: 1367px) {
         font-size: 36px;
     }
+    @media screen and (max-width: 426px) {
+        font-size: 24px;
+    }
 }
-.global-sub-title{
+
+.global-sub-title {
     font-size: 36px;
     color: var(--primary-color);
     font-weight: 500;
@@ -160,7 +164,8 @@ body {
         font-size: 22px;
     }
 }
-.text-products{
+
+.text-products {
     font-size: 20px;
     color: #ffffff;
     line-height: 2;
