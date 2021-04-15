@@ -686,7 +686,7 @@ footer {
     .product-item {
       height: unset; } }
   .product-item .top {
-    height: 35%;
+    height: 40%;
     padding-top: 10%; }
     @media screen and (max-width: 1367px) {
       .product-item .top {
@@ -703,7 +703,7 @@ footer {
         padding-top: 50px;
         padding-bottom: 128px; } }
   .product-item .bottom {
-    height: 65%;
+    height: 60%;
     padding-top: 5%; }
     @media screen and (max-width: 1440px) {
       .product-item .bottom {
@@ -860,9 +860,10 @@ footer {
   background-color: var(--primary-color);
   position: relative;
   padding: 100px 0; }
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 991px) {
     .contact-banner {
-      height: unset; } }
+      height: unset;
+      padding: 60px 0; } }
   .contact-banner .bg {
     position: absolute;
     top: 50%;
@@ -895,13 +896,14 @@ footer {
             border-radius: 21px;
             background-image: url(../images/product/contact-bg-ipad.png);
             background-size: cover;
-            margin-bottom: 50px;
-            padding: 20px; } }
+            margin-bottom: 60px;
+            padding: 20px;
+            border: 1px solid #ffffff; } }
         @media screen and (max-width: 540px) {
           .contact-banner .container-fluid .row .col-xl-7 {
             background-image: url(../images/product/contact-bg-mobile.png);
             height: 300px;
-            border: 1px solid #ffffff; } }
+            margin-bottom: 20px; } }
         .contact-banner .container-fluid .row .col-xl-7 .contact-title {
           color: #FFFFFF;
           font-size: 68px;
@@ -957,9 +959,13 @@ footer {
             @media screen and (max-width: 1440px) {
               .contact-banner .container-fluid .row .col-xl-5 .top .item {
                 font-size: 18px; } }
+            @media screen and (max-width: 1140px) {
+              .contact-banner .container-fluid .row .col-xl-5 .top .item {
+                font-size: 20px; } }
             @media screen and (max-width: 540px) {
               .contact-banner .container-fluid .row .col-xl-5 .top .item {
-                font-size: 13px; } }
+                font-size: 13px;
+                margin-bottom: 15px; } }
             .contact-banner .container-fluid .row .col-xl-5 .top .item a {
               color: #FFFFFF;
               font-size: 28px; }
@@ -969,6 +975,9 @@ footer {
               @media screen and (max-width: 1440px) {
                 .contact-banner .container-fluid .row .col-xl-5 .top .item a {
                   font-size: 18px; } }
+              @media screen and (max-width: 1140px) {
+                .contact-banner .container-fluid .row .col-xl-5 .top .item a {
+                  font-size: 20px; } }
               @media screen and (max-width: 540px) {
                 .contact-banner .container-fluid .row .col-xl-5 .top .item a {
                   font-size: 13px; } }
@@ -990,9 +999,11 @@ footer {
               height: 240px; } }
           @media screen and (max-width: 1140px) {
             .contact-banner .container-fluid .row .col-xl-5 .layout {
-              margin-bottom: 50px; } }
+              margin-bottom: 60px;
+              height: 280px;
+              border: 1px solid #ffffff; } }
           @media screen and (max-width: 540px) {
             .contact-banner .container-fluid .row .col-xl-5 .layout {
               height: unset;
               border-radius: 20px;
-              border: 1px solid #ffffff; } }
+              margin-bottom: 20px; } }
