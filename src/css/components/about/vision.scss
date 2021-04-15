@@ -1,5 +1,4 @@
 .vision {
-    min-height: 100vh;
     border-top: 1px solid #009254;
     border-bottom: 1px solid #009254;
     .left {
@@ -7,11 +6,21 @@
         height: 100%;
         img {
             position: absolute;
-            left: -100px;
-            top: -356px;
+            left: 100px;
+            top: 50%;
+            transform: translateY(-50%);
+            @media screen and (max-width: 1440px) {
+                width: 85%;
+            }
+            @media screen and (max-width: 769px) {
+                width: 75%;
+            }
         }
     }
     .right {
+        @media screen and(max-width: 769px) {
+            padding: 70px 0;
+        }
         .gim {
             width: 20px;
             height: 200px;
@@ -26,9 +35,15 @@
             .continus {
                 font-size: 16px;
                 line-height: 16px;
+                @media screen and(max-width: 1280px) {
+                    font-size: 15px !important;
+                }
             }
             p {
                 margin: 0;
+                @media screen and(max-width: 1280px) {
+                    font-size: 15px !important;
+                }
             }
         }
     }
