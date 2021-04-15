@@ -24,7 +24,7 @@
                 padding: 0 15px;
                 font-size: 200px;
             }
-            @media screen and (max-width: 426px) {
+            @media screen and (max-width: 512px) {
                 font-size: 68px;
             }
         }
@@ -38,7 +38,7 @@
             @media screen and(max-width: 1280px) {
                 font-size: 15px;
             }
-            @media screen and (max-width: 426px) {
+            @media screen and (max-width: 512px) {
                 font-size: 12px;
             }
             .title {
@@ -46,7 +46,7 @@
                     font-size: 20px !important;
                     margin-bottom: 20px;
                 }
-                @media screen and (max-width: 426px) {
+                @media screen and (max-width: 512px) {
                     margin-top: 20px;
                 }
                 font-size: 24px;

@@ -1,7 +1,8 @@
 .omni-health {
     .left {
-        @media screen and(max-width: 769px) {
+        @media screen and(max-width: 991px) {
             padding: 70px 0;
+            margin-left: 50px;
         }
         .gim {
             width: 20px;
@@ -63,8 +64,14 @@
             right: 100px;
             top: 50%;
             transform: translateY(-50%);
+            @media screen and (max-width: 1800px) {
+                width: 80%;
+            }
             @media screen and (max-width: 1440px) {
                 width: 85%;
+            }
+            @media screen and (max-width: 1024px) {
+                right: 50px;
             }
             @media screen and (max-width: 769px) {
                 width: 75%;
