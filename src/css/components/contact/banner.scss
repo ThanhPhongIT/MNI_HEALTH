@@ -3,7 +3,7 @@
     background-color: var(--primary-color);
     position: relative;
     padding: 100px 0;
-    @media screen and(max-width: 1140px) {
+    @media screen and(max-width: 540px) {
         height: unset;
     }
     .bg{
@@ -36,10 +36,15 @@
                     display: unset;
                     background-position: right;
                     border-radius: 21px;
-                    background-image: url(../images/product/contact-bg-mobile.png);
+                    background-image: url(../images/product/contact-bg-ipad.png);
                     background-size: cover;
                     margin-bottom: 50px;
                     padding: 20px;
+                }
+                @media screen and(max-width: 540px) {
+                    background-image: url(../images/product/contact-bg-mobile.png);
+                    height: 300px;
+                    border: 1px solid #ffffff;
                 }
                 .contact-title{
                     color: #FFFFFF;
@@ -52,6 +57,8 @@
                     }
                     @media screen and(max-width: 540px) {
                         font-size: 22px;
+                        margin-bottom: 25px;
+                        margin-top: 20px;
                     }
                 
                 }
@@ -63,7 +70,7 @@
                 }
                 .bg-mobile{
                     display: none;
-                    @media screen and(max-width: 1140px) {
+                    @media screen and(max-width: 540px) {
                         display: block;
                         position: absolute;
                     }
@@ -83,8 +90,13 @@
                     flex-direction: column;
                     justify-content: center;
                     margin-bottom: 20px;
+                    @media screen and(max-width: 540px) {
+                        padding: 20px;
+                        img{
+                            width: 15px;
+                        }
+                    }
                     .item{
-
                         margin-bottom: 25px;
                         color: #FFFFFF;
                         font-size: 28px;
@@ -95,6 +107,9 @@
                         @media screen and(max-width: 1440px) {
                             font-size: 18px;
                         }
+                        @media screen and(max-width: 540px) {
+                            font-size: 13px;
+                        }
                         a{
                             color: #FFFFFF;
                             font-size: 28px;
@@ -104,9 +119,15 @@
                             @media screen and(max-width: 1440px) {
                                 font-size: 18px;
                             }
+                            @media screen and(max-width: 540px) {
+                                font-size: 13px;
+                            }
                         }
                         img{
                             margin-right: 20px;
+                            @media screen and(max-width: 540px) {
+                                margin-right: 10px;
+                            }
                         }
                     }
                 }
@@ -123,6 +144,11 @@
                     }
                     @media screen and(max-width: 1140px) {
                         margin-bottom: 50px;
+                    }
+                    @media screen and(max-width: 540px) {
+                        height: unset;
+                        border-radius: 20px;
+                        border: 1px solid #ffffff;
                     }
                 }
             }

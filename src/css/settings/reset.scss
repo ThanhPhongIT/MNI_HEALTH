@@ -1,11 +1,7 @@
 .w-90 {
     width: 90% !important;
 }
-.w-sm-90{
-    @media screen and(max-width: 540px) {
-        width: 90% !important;
-    }
-}
+
 
 .w-40 {
     width: 40% !important;
@@ -18,7 +14,11 @@
 .w-80 {
     width: 80% !important;
 }
-
+.w-sm-90{
+    @media screen and(max-width: 540px) {
+        width: 90% !important;
+    }
+}
 .w-10 {
     width: 10% !important;
 }
@@ -161,7 +161,8 @@ body {
         font-size: 24px;
     }
 }
-.global-sub-title{
+
+.global-sub-title {
     font-size: 36px;
     color: var(--primary-color);
     font-weight: 500;
@@ -175,7 +176,8 @@ body {
         font-size: 16px;
     }
 }
-.text-products{
+
+.text-products {
     font-size: 20px;
     color: #ffffff;
     line-height: 2;

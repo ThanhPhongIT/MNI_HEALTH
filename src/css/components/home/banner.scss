@@ -1,7 +1,15 @@
 .home {
     .banner {
-        height: 100%;
+        min-height: 100vh;
         background-color: #008049;
+        display: flex;
+        align-items: center;
+        .height {
+            height: 100vh;
+        }
+        .right {
+            background-color: var(--primary-color);
+        }
         .img-back {
             width: 400px;
             position: absolute;
@@ -9,6 +17,20 @@
             right: 70px;
             img {
                 width: 100%;
+            }
+            @media screen and (max-width: 1600px) {
+                top: 35%;
+                right: 8px;
+            }
+            @media screen and(max-width: 991px) {
+                width: 300px;
+                top: 25%;
+                right: 60px;
+            }
+            @media screen and(max-width: 426px) {
+                width: 228px;
+                top: 29%;
+                right: 8px;
             }
         }
         .bg-dif {
@@ -22,8 +44,19 @@
             font-weight: 500;
             font-family: 'Segoe UI', sans-serif;
             text-transform: uppercase;
+            @media screen and (max-width: 1600px) {
+                font-size: 39px;
+                margin: 50px 0 100px 0;
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 29px;
+                margin: 50px 0 100px 0;
+            }
             p {
                 line-height: 100px;
+                @media screen and (max-width: 768px) {
+                    line-height: 50px;
+                }
                 margin: 0;
                 color: var(--color-text-white);
             }

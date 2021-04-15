@@ -15,11 +15,11 @@
         <div class="header-content d-flex align-items-center justify-content-between">
           <div class="logo"> <img src="images/logo.svg" alt=""></div>
           <div class="header_menu"> 
-            <ul class="d-flex align-items-center justify-content-center">
-              <li> <a href="index.html">Home </a></li>
-              <li> <a href="about.html">About us </a></li>
-              <li> <a href="products.html">Our products </a></li>
-              <li> <a href="contact.html">Contacts</a></li>
+            <ul>
+              <li> <a href="index.html" id="home">Home </a></li>
+              <li> <a href="about.html" id="about">About us </a></li>
+              <li> <a href="products.html" id="ourproduct">Our products </a></li>
+              <li> <a href="contact.html" id="contact">Contacts</a></li>
             </ul>
           </div>
           <div class="header__language">
@@ -31,13 +31,14 @@
               </div>
             </div>
           </div>
+          <div class="menubar"><img src="images/menubar.png" alt=""></div>
         </div>
       </div>
     </div>
     <div class="omni-health container-fluid">
       <div class="row">
-        <div class="col-lg-5 col-12 d-flex align-items-center justify-content-between order-md-2 order-lg-1">
-          <div class="w-20 he-100 d-md-none d-lg-block"></div>
+        <div class="col-lg-5 col-12 d-flex align-items-center justify-content-between order-md-2 order-lg-1 order-2">
+          <div class="w-20 he-100 d-none d-lg-block"></div>
           <div class="left w-80 d-flex align-items-center justify-content-between">
             <div class="gim"> </div>
             <div class="content"> <span class="start">Omni Health </span><span class="continus">được biết đến như một doanh nghiệp chuyên tư vấn và xây dựng các phần mềm liên quan và dẫn đầu trong lĩnh vực y tế tại Việt Nam. Các sản phẩm chính của Omni Health bao gồm: CloudDoctor, CI HIS, Telehealth Platform và Medical API. Với sự thấu hiểu đặc thù về ngành, chúng tôi mong muốn có thể đem tới cho khách hàng những sản phẩm chất lượng nhất, dễ dàng sử dụng và vận hành trong quá trình làm việc. </span>
@@ -45,7 +46,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-7 col-12 d-flex align-items-center justify-content-between pr p-0 order-md-1 order-lg-2">
+        <div class="col-lg-7 col-12 d-flex align-items-center justify-content-between pr p-0 order-md-1 order-lg-2 order-1">
           <div class="right w-80"><img src="images/omni-right.png" alt=""></div>
           <div class="w-20 back-side he-100"></div>
         </div>
@@ -67,14 +68,14 @@
               </div>
             </div>
           </div>
-          <div class="w-20 he-100 d-md-none"></div>
+          <div class="w-20 he-100 d-none d-lg-block"></div>
         </div>
       </div>
     </div>
     <div class="mission container-fluid">
       <div class="row"> 
-        <div class="col-lg-5 col-12 d-flex align-items-center justify-content-between order-md-2 order-lg-1">
-          <div class="w-20 he-100 d-md-none d-lg-block"></div>
+        <div class="col-lg-5 col-12 d-flex align-items-center justify-content-between order-md-2 order-lg-1 order-sm-2 order-xs-2 order-2">
+          <div class="w-20 he-100 d-none d-lg-block"></div>
           <div class="left w-80">
             <div class="global-title">Sứ mệnh</div>
             <div class="d-flex align-items-start justify-content-between">
@@ -86,7 +87,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-7 col-12 p-0 d-flex align-items-center justify-content-between pr order-md-1 order-lg-2">
+        <div class="col-lg-7 col-12 p-0 d-flex align-items-center justify-content-between pr order-md-1 order-lg-2 order-sm-1 order-sm-1 order-1">
           <div class="right w-80"><img src="images/mision-right.png" alt=""></div>
           <div class="w-20 back-side he-100"></div>
         </div>
@@ -145,16 +146,13 @@
             <div class="contact"> 
               <ul> 
                 <li>
-                  <div class="icon"> <img src="images/phone.svg" alt=""></div>
-                  <div class="content">0967288920</div>
+                  <div class="icon"> <img src="images/phone.svg" alt=""></div><a class="content" href="tel: 0967288920">0967288920</a>
                 </li>
                 <li>
-                  <div class="icon"> <img src="images/mail.svg" alt=""></div>
-                  <div class="content">marketing@consultindochina.com</div>
+                  <div class="icon"> <img src="images/mail.svg" alt=""></div><a class="content" href="mailto: marketing@consultindochina.com">marketing@consultindochina.com</a>
                 </li>
                 <li>
-                  <div class="icon"> <img src="images/placholder.svg" alt=""></div>
-                  <div class="content">N03-T7, Ngoai Giao Doan, Xuan Tao, Tu Liem, Ha Noi</div>
+                  <div class="icon"> <img src="images/placholder.svg" alt=""></div><a class="content" href="https://www.google.com/maps/@21.0707939,105.7938073,15z">N03-T7, Ngoai Giao Doan, Xuan Tao, Tu Liem, Ha Noi</a>
                 </li>
               </ul>
             </div>
