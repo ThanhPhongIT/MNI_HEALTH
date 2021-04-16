@@ -42,21 +42,21 @@ languageMode();
 
 
 function menuDot(page) {
-    if (page == 'about.html') {
+    if (page == '' || page == "index.html") {
+        document.getElementById("home").classList.add('active')
+    } else if (page == 'about.html') {
         document.getElementById("about").classList.add('active')
     } else if (page == 'contact.html') {
         document.getElementById("contact").classList.add('active')
     } else if (page == "products.html") {
         document.getElementById("ourproduct").classList.add('active')
-    } else {
-        document.getElementById("home").classList.add('active')
     }
 }
 
 function checkDot() {
     let arr = window.location.href.split('/');
     let page = arr[arr.length - 1];
-    console.log(page);
+    console.log(typeof page);
     menuDot(page)
 
 }
