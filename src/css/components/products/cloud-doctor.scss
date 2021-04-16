@@ -27,7 +27,7 @@
     }
     .bottom{
         height: 60%;
-        padding-top: 5%;
+        padding-top: 3%;
         @media screen and(max-width: 1440px) {
             padding-top: 3%;
         }
@@ -52,11 +52,12 @@
         transform: translateY(-50%);
         @media screen and(max-width: 1680px) {
             left: -30rem;
-        }
-        @media screen and(max-width: 1440px) {
             img{
                 width: 90%;
             }
+        }
+        @media screen and(max-width: 1440px) {
+            
         }
         @media screen and(max-width: 1366px) {
             img{
