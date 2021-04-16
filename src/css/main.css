@@ -767,7 +767,7 @@ footer {
   @media screen and (max-width: 540px) {
     .product-item .passport-vaccine-img {
       left: -10rem;
-      top: 7rem;
+      top: 6rem;
       width: 120%; }
       .product-item .passport-vaccine-img img {
         width: 100%; } }
@@ -863,7 +863,7 @@ footer {
   @media screen and (max-width: 540px) {
     .telehealth-platform .bg {
       right: -8rem;
-      top: 14rem;
+      top: 12rem;
       width: 100%; } }
 
 .contact-banner {
