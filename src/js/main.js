@@ -68,12 +68,17 @@ function toogleMenu() {
     let body = document.getElementsByTagName("body")[0];
 
     menuButton.addEventListener("click", () => {
-        menu.classList.toggle('set-width')
-        body.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+        menu.classList.toggle('set-width');
+        if (!menu.classList.contains('set-width')) {
+            body.style.backgroundColor = "#ffffff"
+        } else {
+            body.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+        };
     });
     window.addEventListener('click', function(e) {
         if (!menu.contains(e.target) && !menuButton.contains(e.target)) {
-            menu.classList.remove('set-width')
+            menu.classList.remove('set-width');
+            body.style.backgroundColor = "#ffffff"
         }
     })
 }
