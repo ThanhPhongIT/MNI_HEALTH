@@ -42,14 +42,14 @@ languageMode();
 
 
 function menuDot(page) {
-    if (page == 'index.html') {
-        document.getElementById("home").classList.add('active')
-    } else if (page == 'about.html') {
+    if (page == 'about.html') {
         document.getElementById("about").classList.add('active')
     } else if (page == 'contact.html') {
         document.getElementById("contact").classList.add('active')
-    } else {
+    } else if (page == "products.html") {
         document.getElementById("ourproduct").classList.add('active')
+    } else {
+        document.getElementById("home").classList.add('active')
     }
 }
 
