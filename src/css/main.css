@@ -1001,6 +1001,7 @@ footer {
           height: 320px; }
           @media screen and (max-width: 1600px) {
             .contact-banner .container-fluid .row .col-xl-5 .layout {
+              border-radius: 20px;
               height: 280px; } }
           @media screen and (max-width: 1440px) {
             .contact-banner .container-fluid .row .col-xl-5 .layout {
@@ -1016,5 +1017,4 @@ footer {
           @media screen and (max-width: 540px) {
             .contact-banner .container-fluid .row .col-xl-5 .layout {
               height: unset;
-              border-radius: 20px;
               margin-bottom: 20px; } }
